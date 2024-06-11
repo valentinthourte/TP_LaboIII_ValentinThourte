@@ -1,0 +1,331 @@
+:root {
+    --primary-color: #3518b3;
+    --secondary-color: #FFFFFF;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+    color: var(white);
+  }
+  
+  .barra {
+    display: flex;
+  }
+  body {
+    width: 100vw;
+    height: 100vh;
+  
+    background: var(--secondary-color);
+  }
+
+
+  .logoPrincipal {
+    margin-top: 1vw;
+    margin-left: 1vw;
+  }
+
+  header {
+    
+    background-image: url("../assets/images/header.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 100vh;
+  }
+
+  header nav ul {
+    text-decoration: none;
+    list-style-type: none;
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+  }
+
+  header nav ul li {
+    margin-top: 3vh;
+  }
+
+  header nav ul li a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    
+    font-size: 20px;
+  }
+  
+  .titulo {
+    color: white;
+    font-size: 3em;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1.5px; 
+    margin-bottom: 5vh;
+    margin-left: 15px;
+    width: 60vw;
+  }
+
+  section {
+      /* gap: 1rem;
+      display: inline-block;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center; */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+  }
+
+  
+  form {
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    
+    width: 100%;
+    max-width: 400px;
+    
+    padding: 1rem;
+    border-radius: 10px;
+    background: whitesmoke;
+  }
+  
+  .form-group {
+    gap: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  .btn {
+    width: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    padding: 0.5rem;
+    
+    color: white;
+    background: rgb(79, 68, 224);
+    
+    border: none;
+    border-radius: 20px;
+    
+    cursor: pointer;
+  }
+  
+  .divIconos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .divIconos div {
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+  }
+  
+  .subtitulo {
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .destacado {
+    width: 30%;
+    height: 30%;
+  }
+  
+  .seccion {
+    text-align: center;
+  }
+  .anuncio {
+    border: 1px solid black;
+    margin: 5px;
+    width: 70%;
+    background-color: #f5f5f5;
+    height: 100%;
+    padding: 10px;
+  }
+
+  .barra {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .seccionAnuncios {
+    height: auto;
+  }
+
+  .anuncios {
+    display: inline-flex;
+    margin-bottom: 10px;
+    height: 100%;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+
+  .textoAnuncio {
+    text-align: left;
+    padding-left: 10px;
+    overflow-wrap: break-word;
+    overflow: hidden;
+  }
+
+  .iconoNosotros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 75vh;
+  }
+
+  .anuncio img {
+    height: 70%;
+    width: 100%;
+    opacity: 0.7;
+    transition: opacity 500ms;
+  }
+
+  .anuncio img:hover {
+    opacity: 1;
+  }
+
+  .contenedorBotonverPropiedad {
+    display: flex;
+    justify-content: center;
+    
+  }
+
+  .botonVerPropiedad {
+    width: 50%;
+  }
+
+  .datosNosotros  {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    text-align: justify;
+    padding: 5px;
+  }
+
+  .iconos {
+    width: 50%;
+    height: 50%;
+  }
+
+
+  .detalles-anuncio {
+    width: 100%;
+  
+    justify-content: center;
+  
+    gap: 2rem;
+  }
+  
+  .detalle-anuncio {
+    align-items: center;
+    justify-content: space-between;
+  
+    gap: 1rem;
+  }
+
+  .imagen-detalle-anuncio {
+    max-width: 10%;
+    max-height: 10%;
+  }
+
+  .encuentra-container {
+    background-image: url("../assets/images/encuentra.jpg");
+    padding: 15px;
+    min-height: 30vh;
+    width: 100%;
+    color: white;
+  }
+  
+  .espacio {
+    min-height: 20vh;
+  }
+  
+  .seccion-encuentra {
+    padding: 10px;
+    color: white;
+  }
+
+  .btnBuscarAsesor {
+    width: 10%;
+    height: 10vh;
+    border-radius: 0;
+    background-color: orange;
+    color: black;
+    margin: 15px;
+    padding: 5px;
+    font-family: roboto;
+    font-size: 1.5em;
+  }
+
+  .card-body button {
+    height: 2rem;
+  
+    color: white;
+    background: #e08709;
+  }
+  
+  .imagen-propiedad-blog {
+    padding: 10px;
+    margin: 10px;
+    margin-top: 0px;
+    height: 30%;
+    width: 30%;
+    
+  }
+  
+  
+  .carta {
+    background-color: green;
+    width: 50%;
+    margin: 10px;
+    padding: 25px;
+    height: 50%;
+  }
+  
+  .texto-carta {
+    font-size: 2em;
+    color: white;
+  }
+  
+  footer {
+    background-color: rgb(70, 70, 70);
+    padding: 1vh;
+    padding-bottom: 0px;
+    height: 10vh;
+  }
+  
+  footer nav ul {
+    text-decoration: none;
+    list-style-type: none;
+  
+    flex-direction: row;
+    justify-content: right;
+  }
+  
+  footer nav ul li a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 20px;
+  }
