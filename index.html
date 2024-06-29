@@ -9,13 +9,16 @@
     
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/styles.css">
+
+    <script src="./js/index.js" type="module" defer></script>
     
     <nav></nav>
 </head>
 <body>
+  <div class="content">
+
     <header>
         <div class="barra">
-
             <img src="./assets/images/logo.svg" alt="Logo Principal" class="logoPrincipal">
             <nav>
                 <ul>
@@ -29,182 +32,124 @@
         <h1 class="titulo">Ventas de casas y departamentos exclusivos de lujo</h1>
     </header>
 
-    <section>
-        <h2 class="subtitulo">Más sobre nosotros</h2>
-        <div class="divIconos">
-            <div class="datosNosotros">
-                <div class="iconoNosotros">
-                    <img src="./assets/images/icono1.svg" alt="Icono Seguridad" class="iconos">
-                </div>
-                <h2>Seguridad</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae eius dicta minima sunt iure, cumque in nam, aut ipsa recusandae facilis inventore excepturi! Exercitationem saepe, incidunt modi velit repellat officiis.</p>
-            </div>
-    
-            <div class="datosNosotros">
-                <div class="iconoNosotros">
-                    <img src="./assets/images/icono2.svg" alt="Icono Mejor Precio" class="iconos">
-                </div>
-                <h2>Mejor precio</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae eius dicta minima sunt iure, cumque in nam, aut ipsa recusandae facilis inventore excepturi! Exercitationem saepe, incidunt modi velit repellat officiis.</p>
-            </div>
-    
-            <div class="datosNosotros">
-                <div class="iconoNosotros">
-                    <img src="./assets/images/icono3.svg" alt="Icono A Tiempo" class="iconos">
-                </div>
-                <h2>A tiempo</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae eius dicta minima sunt iure, cumque in nam, aut ipsa recusandae facilis inventore excepturi! Exercitationem saepe, incidunt modi velit repellat officiis.</p>
-            </div>
-        </div>
-
-    </section>
-
-    <section class="seccionAnuncios">
-        <h2 class="subtitulo">Casas y departamentos en venta</h2>
-        <div class="anuncios">
-            <div class="card anuncio">
-                <img src="./assets/images/anuncio1.jpg" class="destacado" alt="Icono Destacado1">
-                
-                <div class="textoAnuncio">
-                    <h3>Casa de Lujo en el Lago</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa deserunt cumque nostrum repudiandae ut iure rerum voluptate. Maxime repellat totam quae assumenda, quisquam doloremque earum eius magni debitis odit eligendi.</p>
-                    <b>US$350.000</b>
-                </div>
-                
-                <div class="detalles-anuncio block">
-                    <div class="detalle-anuncio inline">
-                        <img src="./assets/images/icono_wc.svg" class="imagen-detalle-anuncio" alt="Icono Banios" />
-                        <span>3</span>
+    <div class="container-fluid">
+        <section>
+            <h2 class="subtitulo">Más sobre nosotros</h2>
+            <div class="divIconos" id="contenedor-datos-nosotros">
+            <template id="nosotros-template">
+                <div class="datosNosotros">
+                    <div class="iconoNosotros 7">
+                        <img src="" alt="" class="iconos">
                     </div>
-                    <div class="detalle-anuncio inline">
-                        <img src="./assets/images/icono_estacionamiento.svg" class="imagen-detalle-anuncio" alt="Icono Estacionamiento" />
-                        <span>3</span>
-                        
-                    </div>
-                    <div class="detalle-anuncio inline">
-                        <img src="./assets/images/icono_dormitorio.svg" class="imagen-detalle-anuncio" alt="Icono Dormitorio" />
-                        <span>3</span>
-                    </div>
+                    <h2 id="tituloDatoNosotros"></h2>
+                    <p id="textoDatoNosotros"></p>
                 </div>
-                <div class="contenedorBotonverPropiedad">
-                    <button class="botonVerPropiedad btn">Ver propiedad</button>
-                </div>
-            </div>
-            
-            <div class="card anuncio">
-                <img src="./assets/images/anuncio2.jpg" class="destacado" alt="Icono Destacado2">
-                
-                <div class="textoAnuncio">
-                    <h3>Casa terminados de lujo</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa deserunt cumque nostrum repudiandae ut iure rerum voluptate. Maxime repellat totam quae assumenda, quisquam doloremque earum eius magni debitis odit eligendi.</p>
-                    <b>US$250.000</b>
-                </div>
-                    <div class="detalles-anuncio block centered">
-                        <div class="detalle-anuncio inline">
-                            <img src="./assets/images/icono_wc.svg" class="imagen-detalle-anuncio" alt="Icono Banios" />
-                            <span>3</span>
-                        </div>
-                        <div class="detalle-anuncio inline">
-                            <img src="./assets/images/icono_estacionamiento.svg" class="imagen-detalle-anuncio" alt="Icono Estacionamiento" />
-                            <span>3</span>
-                            
-                        </div>
-                        <div class="detalle-anuncio inline">
-                            <img src="./assets/images/icono_dormitorio.svg" class="imagen-detalle-anuncio" alt="Icono Dormitorio" />
-                            <span>3</span>
-                        </div>
-                    </div>
-                    
-                <div class="contenedorBotonverPropiedad">
-                    <button class="botonVerPropiedad btn">Ver propiedad</button>
-                </div>
-            </div>
-            
-            <div class="card anuncio">
-                <img src="./assets/images/anuncio3.jpg" class="destacado" alt="Icono Destacado3">
-                
-                <div class="textoAnuncio">
-                    <h3>Casa con Pileta</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa deserunt cumque nostrum repudiandae ut iure rerum voluptate. Maxime repellat totam quae assumenda, quisquam doloremque earum eius magni debitis odit eligendi.</p>
-                    <b>US$450.000</b>
-                </div>
-            
-                <div class="detalles-anuncio block">
-                    <div class="detalle-anuncio inline">
-                        <img src="./assets/images/icono_wc.svg" class="imagen-detalle-anuncio" alt="Icono Banios" />
-                        <span>3</span>
-                    </div>
-                    <div class="detalle-anuncio inline">
-                        <img src="./assets/images/icono_estacionamiento.svg" class="imagen-detalle-anuncio" alt="Icono Estacionamiento" />
-                        <span>3</span>
-                        
-                    </div>
-                    <div class="detalle-anuncio inline">
-                        <img src="./assets/images/icono_dormitorio.svg" class="imagen-detalle-anuncio" alt="Icono Dormitorio" />
-                        <span>3</span>
-                    </div>
-                </div>
-
-                <div class="contenedorBotonverPropiedad">
-                    <button class="botonVerPropiedad btn">Ver propiedad</button>
-                </div>
-        </div>
-        </div>
-    </section>
-    
-
-    <section class="seccion-encuentra">
-        <div class="encuentra-container">
-          <h2>Encuentra la casa de tus sueños</h2>
-          <div class="espacio"></div>
-          <h3>Llena el formulario de contacto y un asesor se pondrá en contacto a la brevedad</h3>
-          <button class="btnBuscarAsesor btn">Contactános</button>
-        </div>
-      </section>
-  
-      <section>
-          <h2>Nuestro Blog</h2>
-          <div class="nuestro-blog-container flex">
-          <div class="propiedades-blog block">
-            <div class="propiedad-blog flex">
-              <img src="./assets/images/blog1.jpg" alt="Anuncio 3" class="imagen-propiedad-blog"/>
-              <div class="propiedad-blog-info">
-                <h3>Terraza en el techo de tu casa</h3>
-                <div class="divide green half"></div>
-                <div class="inline">
-                  <p>Escrito el: <span class="text-warning-emphasis inline">20/10/2019</span> por: <span class="text-warning-emphasis inline">Admin</span>
-                  <p>Consejos para construir una terraza en el techo de tu casa, con los mejores materiales y ahorrando dinero</p>
-                  </div>
-              </div>
-
-            </div>
-            <div class="propiedad-blog flex">
-              <img src="./assets/images/blog2.jpg" alt="Anuncio 3" class="imagen-propiedad-blog"/>
-              <div class="inline">
-                <h3>Guia para la decoracion de tu hogar</h3>
-                <div class="divide green half"></div>
-                <div class="inline">
-                  <p>Escrito el: <span class="text-warning-emphasis inline">20/10/2019</span> por: <span class="text-warning-emphasis inline">Admin</span>
-                  <p>Maximiza el espacio de tu hogar con esta guia, aprende a combinar muebles y colores para darle vida a tu espacio</p>
-                  </div>
-              </div>
-            </div>
-          </div>
-          <div class="card carta">
-            <div class="card-body">
-              <div>
-                <img src="./assets/images/comilla.svg" alt="">
-              </div>
-              <p class="card-text texto-carta roboto">El personal se comportó de una excelente forma, muy buena atención y la casa que me ofrecieron cumple con mis expectavivas</p>
-              <h4 class="align-text-right roboto white">- Juan Perez</h4>
-            </div>
-          </div>
-        </div>
-  
-  
-        <h2>Comentarios</h2>
-      </section>
+            </template>
+        </section>
     </div>
+
+    <div class="container-fluid">
+        
+        <section class="seccionAnuncios justify-content-between">
+            <h2 class="subtitulo">Casas y departamentos en venta</h2>
+            <div class="contenedor-anuncios" id="contenedor-anuncios">
+               
+            </div>
+    
+            <template id="anuncio-template">
+                <div class="card anuncio">
+                    <img src="" class="destacado" alt="">
+                    
+                    <div class="card-body">
+                        <div class="textoAnuncio">
+                            <h3 class="tituloAnuncio"></h3>
+                            <p class="descripcionAnuncio"></p>
+                            <b class="precioAnuncio"></b>
+                        </div>
+                        
+                        <div class="detalles-anuncio block">
+                            <div class="detalle-anuncio inline">
+                                <img src="./assets/images/icono_wc.svg" class="imagen-detalle-anuncio" alt="Icono Banios" />
+                                <span class="cantidadBanios"></span>
+                            </div>
+                            <div class="detalle-anuncio inline">
+                                <img src="./assets/images/icono_estacionamiento.svg" class="imagen-detalle-anuncio" alt="Icono Estacionamiento" />
+                                <span class="cantidadEstacionamiento"></span>
+                                
+                            </div>
+                            <div class="detalle-anuncio inline">
+                                <img src="./assets/images/icono_dormitorio.svg" class="imagen-detalle-anuncio" alt="Icono Dormitorio" />
+                                <span class="cantidadDormitorios"></span>
+                            </div>
+                        </div>
+                        <div class="contenedorBotonverPropiedad">
+                            <button class="botonVerPropiedad btn">Ver propiedad</button>
+                        </div>
+                    </div>
+                </div>
+            </template>
+        </section>
+    </div>
+
+
+    <div class="container-fluid">
+
+        <section class="seccion-encuentra">
+            <div class="encuentra-container">
+              <h2>Encuentra la casa de tus sueños</h2>
+              <div class="espacio"></div>
+              <h3>Llena el formulario de contacto y un asesor se pondrá en contacto a la brevedad</h3>
+              <button class="btnBuscarAsesor btn">Contactános</button>
+            </div>
+          </section>
+        </div>
+        <div class="container">
+          <section>
+            <h2>Nuestro Blog</h2>
+            <div class="nuestro-blog-container flex">
+            <div class="propiedades-blog block">
+              <div class="propiedad-blog flex">
+                <img src="./assets/images/blog1.jpg" alt="Anuncio 3" class="imagen-propiedad-blog"/>
+                <div class="propiedad-blog-info">
+                  <h3>Terraza en el techo de tu casa</h3>
+                  <div class="divide green half"></div>
+                  <div class="inline">
+                    <p>Escrito el: <span class="text-warning-emphasis inline">20/10/2019</span> por: <span class="text-warning-emphasis inline">Admin</span>
+                    <p>Consejos para construir una terraza en el techo de tu casa, con los mejores materiales y ahorrando dinero</p>
+                    </div>
+                </div>
+  
+              </div>
+              <div class="propiedad-blog flex">
+                <img src="./assets/images/blog2.jpg" alt="Anuncio 3" class="imagen-propiedad-blog"/>
+                <div class="inline">
+                  <h3>Guia para la decoracion de tu hogar</h3>
+                  <div class="divide green half"></div>
+                  <div class="inline">
+                    <p>Escrito el: <span class="text-warning-emphasis inline">20/10/2019</span> por: <span class="text-warning-emphasis inline">Admin</span>
+                    <p>Maximiza el espacio de tu hogar con esta guia, aprende a combinar muebles y colores para darle vida a tu espacio</p>
+                    </div>
+                </div>
+              </div>
+            </div>
+              <div class="card carta">
+                
+              <h2 class="card-title">Comentarios</h2>
+                <div class="card-body">
+                  <div>
+                    <img src="./assets/images/comilla.svg" alt="">
+                  </div>
+                  <p class="card-text texto-carta roboto">El personal se comportó de una excelente forma, muy buena atención y la casa que me ofrecieron cumple con mis expectavivas</p>
+                  <h4 class="align-text-right roboto white">- Juan Perez</h4>
+                </div>
+              </div>
+          </div>
+    
+    
+        </section>
+        </div>
+    </div>
+
 
     <footer class="footer justify-content-between flex align-items-center">
       <nav>
@@ -221,4 +166,8 @@
 
 
 </body>
+  </div>
 </html>
+
+
+
